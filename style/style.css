@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chau+Philomene+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('/assets/background-onoma.png');
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+/*CABEÇALHO*/
+
+.topo {
+    background: #8c1c13;
+    color: white;
+    padding:15px 0 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo-area {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset:10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link:hover {
+    cursor: pointer;
+}
+
+.sub {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 22px;
+    margin-top: -15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.menu a {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #222222;
+    transform: scale(1.1);
+}
+
+.menu a.active {
+    background: rgba(255, 255, 255, 1);
+    color: #222222;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.idiomas {
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    right: 30px;
+    top:30px;
+    font-size: 20px;
+    color: white;
+}
+
+.idiomas a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.idiomas a:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #222222;
+    transform: scale(1.1);
+}
+
+.idiomas a.active {
+    background: rgba(255, 255, 255, 1);
+    color: #222222;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .topo{
+    background: #000000;
+    color: white;
+    padding:15px 0 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.dark-mode .caixa{
+    background: #222222;
+    padding: 60px 70px;
+    border-radius: 25px;
+    border: 4px solid white;
+    display: flex;
+    gap: 60px;
+    width: 75%;
+}
+
+.dark-mode .texto h2 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-top: 0;
+    font-size: 36px;
+}
+ 
+
+/*CORPO*/
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.caixa {
+    background: #fdf6ed;
+    padding: 60px 70px;
+    border-radius: 25px;
+    border: 4px solid #222222;
+    display: flex;
+    gap: 60px;
+    width: 75%;
+}
+
+.texto h2 {
+    font-family: 'Anton', sans-serif;
+    color: #75130c;
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.imagem img {
+    width: 420px;
+    border-radius: 10px;
+}
