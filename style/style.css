@@ -8,8 +8,6 @@ body {
     background-attachment: fixed;
 }
 
-/*CABEÇALHO*/
-
 .topo {
     background: #8c1c13;
     color: white;
@@ -114,31 +112,17 @@ body {
 
 .dark-mode .topo{
     background: #000000;
-    color: white;
-    padding:15px 0 0 0;
-    text-align: center;
-    position: relative;
 }
 
 .dark-mode .caixa{
     background: #222222;
-    padding: 60px 70px;
-    border-radius: 25px;
     border: 4px solid white;
-    display: flex;
-    gap: 60px;
-    width: 75%;
 }
 
 .dark-mode .texto h2 {
-    font-family: 'Anton', sans-serif;
     color: white;
-    margin-top: 0;
-    font-size: 36px;
 }
- 
 
-/*CORPO*/
 
 .conteudo {
     display: flex;
@@ -151,10 +135,11 @@ body {
     padding: 60px 70px;
     border-radius: 25px;
     border: 4px solid #222222;
-    display: flex;
     flex-direction: row;
     gap: 30px;
     width: 75%;
+    position: relative;
+    z-index: 5;
 }
 
 .texto h2 {
@@ -171,6 +156,12 @@ body {
     clear: both;
 }
 
+.texto, 
+.caixa .texto {
+    position: relative;
+    z-index: 5;
+}
+
 .imagem img {
     width: 350px;
     border-radius: 15px;
@@ -180,11 +171,246 @@ body {
 
 .img-dupla {
     display: flex;
-    justify-content: center; /* centraliza */
-    gap: 20px;               /* espaço entre as imagens */
+    justify-content: center; 
+    gap: 20px;
 }
 
 .img-dupla img {
-    width: 48%;              /* ajusta como quiser */
+    width: 48%;
     border-radius: 10px;
+}
+
+.tabela-scroll {
+    width: 100%;
+    max-height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1; /* fica abaixo do texto */
+}
+
+.tabela-onoma {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+    background: white;
+    color: black;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    display: block;
+}
+
+.tabela-onoma thead {
+    background: #8b1e1e;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.tabela-onoma th,
+.tabela-onoma td {
+    border: 3px solid black;
+    padding: 12px 15px;
+    vertical-align: top;
+}
+
+.tabela-onoma tbody tr:nth-child(even) {
+    background: #f0e7dc;
+}
+
+.tabela-onoma tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.dark-mode .tabela-scroll {
+    border: 3px solid white;
+}
+
+.dark-mode .tabela-onoma {
+    background: #111111;
+    color: white;
+}
+
+.dark-mode .tabela-onoma thead {
+    background: #222222;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.dark-mode .tabela-onoma th,
+.dark-mode .tabela-onoma td {
+    border: 3px solid white;
+}
+
+.dark-mode .tabela-onoma tbody tr:nth-child(even) {
+    background: #1e1e1e;
+}
+
+.dark-mode .tabela-onoma tbody tr:nth-child(odd) {
+    background: #000000;
+}
+
+.dark-mode .tabela-onoma thead th {
+    background: #222222;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+    .menu {
+        gap: 120px;
+    }
+
+    .caixa {
+        width: 85%;
+        padding: 50px;
+    }
+
+    .imagem img {
+        width: 280px;
+    }
+}
+
+/* ---- Para tablets (até 900px) ---- */
+@media (max-width: 900px) {
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .sub {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 60px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .idiomas {
+        right: 15px;
+        top: 15px;
+        font-size: 16px;
+    }
+
+    .caixa {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 40px;
+        width: 90%;
+    }
+
+    .imagem img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .img-dupla {
+        flex-direction: column;
+    }
+
+    .img-dupla img {
+        width: 100%;
+    }
+
+    .tabela-scroll {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .sub {
+        font-size: 18px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .idiomas {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .caixa {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .texto h2 {
+        font-size: 28px;
+    }
+
+    .texto p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .imagem img {
+        width: 220px;
+    }
+
+    .tabela-scroll {
+        max-height: 350px;
+    }
+
+    .tabela-onoma {
+        font-size: 16px;
+    }
+
+    .tabela-onoma th,
+    .tabela-onoma td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo {
+        font-size: 42px;
+    }
+
+    .menu a {
+        font-size: 17px;
+    }
+
+    .caixa {
+        padding: 25px 15px;
+    }
+
+    .imagem img {
+        width: 190px;
+    }
+
+    .tabela-scroll {
+        max-height: 300px;
+    }
+
+    .tabela-onoma {
+        font-size: 15px;
+    }
 }
