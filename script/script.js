@@ -1,18 +1,14 @@
-//Modo escuro
 function darkMode() {
     var element = document.body;
 
-    // Verifica se o modo escuro está ativado atualmente
+
     var isDarkMode = element.classList.contains("dark-mode");
 
-    // Inverte o estado do modo escuro
     element.classList.toggle("dark-mode");
 
-    // Atualiza o estado no localStorage
     localStorage.setItem("darkMode", !isDarkMode);
 }
 
-// Verifica se o modo escuro estava ativado ao carregar a página anteriormente
 window.onload = function() {
     var isDarkMode = localStorage.getItem("darkMode") === "true";
 
@@ -20,4 +16,20 @@ window.onload = function() {
         document.body.classList.add("dark-mode");
     }
 };
- 
+
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox-bg";
+document.body.appendChild(lightbox);
+
+document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.innerHTML = "";
+        const clone = img.cloneNode();
+        lightbox.appendChild(clone);
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
