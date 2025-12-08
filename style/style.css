@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Calibri', sans-serif;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('/assets/background-onoma.png');
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../assets/background-onoma.png');
     background-size: contain;
     background-attachment: fixed;
 }
@@ -443,3 +443,4 @@ body {
         font-size: 15px;
     }
 }
+
