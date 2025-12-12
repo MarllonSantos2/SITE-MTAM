@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js" defer></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="FR-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,25 +17,25 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="FR-ONOJAPO - Sobre.html">À PROPOS</a>
             <a href="FR-ONOJAPO - Onomatopeias.html">ONOMATOPOEES</a>
             <a href="FR-ONOJAPO - Em Mangas.html" class="active">DANS LES MANGAS</a>
             <a href="FR-ONOJAPO - Na Fala.html">DANS LE DISCOURS</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria=label="Menu de Linguas">
             <a href="../PT-BR/ONOJAPO - Em Mangás.html">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Em Mangas.html">EN</a> |
             <a href="FR-ONOJAPO - Em Mangas.html" class="active">FR</a> |
             <a href="../ES/ES-ONOJAPO - Em Mangas.html">ES</a>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>DANS LES MANGAS</h2>
                 <p>L'onomatopée est l'un des éléments les plus caractéristiques du manga, jouant un rôle qui va au-delà de la simple représentation des sons. Dans le contexte de la bande dessinée, elle fait partie intégrante du récit visuel : elle décrit les mouvements, les atmosphères, les sensations et même les états émotionnels de manière directe et graphique. 
@@ -56,7 +56,7 @@
                     Les comparaisons entre les versions japonaise et anglaise montrent comment ces éléments peuvent être réinterprétés de manière créative, en conservant l'énergie de l'original tout en rendant la lecture plus naturelle pour les locuteurs d'une autre langue.
                 </p>
 
-            <div class="img-dupla">
+            <div class="img-dupla" role="img">
                 <img src="../assets/csm12-jp.webp" class="zoomable" alt="Imagem ilustrativa">
                 <img src="../assets/csm12-eng.png" class="zoomable" alt="Imagem ilustrativa">
             </div>
@@ -68,7 +68,7 @@
                     Voyons un autre exemple !
                 </p>
             
-            <div class="imagem">
+            <div class="imagem" role="img">
                 <img src="../assets/kagurabachi103-eng.png" class="zoomable" alt="Imagem ilustrativa">
             </div>
 
@@ -82,6 +82,7 @@
     </main>
 </body>
 </html>
+
 
 
 
