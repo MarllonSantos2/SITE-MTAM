@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js"></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="EN-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,30 +17,30 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="EN-ONOJAPO - Sobre.html">ABOUT</a>
             <a href="EN-ONOJAPO - Onomatopeias.html">ONOMATOPOEIA</a>
             <a href="EN-ONOJAPO - Em Mangas.html">IN MANGA</a>
             <a href="EN-ONOJAPO - Na Fala.html" class="active">IN SPEECH</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="../PT-BR/ONOJAPO - Na Fala.html">PT-BR</a> |
             <a href="EN-ONOJAPO - Na Fala" class="active">EN</a> |
             <a href="../FR/FR-ONOJAPO - Na Fala.html">FR</a> |
             <a href="../ES/ES-ONOJAPO - Na Fala.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>IN SPEECH</h2>
                 <p>Mimetic words or onomatopoeia are an essential part of everyday communication in Japan.
-While in many languages the use of these terms is limited or restricted to children's contexts, in Japanese they are legitimate expressive tools in almost any situation: they appear in informal conversations, TV shows, magazine articles, advertising, and even professional speeches.
+                    While in many languages the use of these terms is limited or restricted to children's contexts, in Japanese they are legitimate expressive tools in almost any situation: they appear in informal conversations, TV shows, magazine articles, advertising, and even professional speeches.
                     Japanese uses these words to convey nuances that would be difficult to express with conventional adjectives or verbs alone, allowing the speaker to describe textures, movements, sensations, emotions, and atmospheres in an immediate and vivid way.
                     For those learning the language, mastering these words is an important step toward sounding natural and fully understanding how Japanese people perceive the world.
                 </p>
@@ -66,7 +66,7 @@ While in many languages the use of these terms is limited or restricted to child
                 <p>Below is a table with several popular mimetic words:
                 </p>
             </div>
-<section class="tabela-onoma-container">
+<section class="tabela-onoma-container" role="region" aria-label="Tabela de Onomatopeias">
     <div class="tabela-scroll">
         <table class="tabela-onoma">
         <thead>
@@ -495,5 +495,6 @@ While in many languages the use of these terms is limited or restricted to child
     </main>
 </body>
 </html>
+
 
 
