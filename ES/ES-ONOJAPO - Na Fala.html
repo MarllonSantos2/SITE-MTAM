@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js"></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="ES-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="ES-ONOJAPO - Sobre.html">SOBRE</a>
             <a href="ES-ONOJAPO - Onomatopeias.html">ONOMATOPEYA</a>
             <a href="ES-ONOJAPO - Em Mangas.html">EN MANGAS</a>
             <a href="ES-ONOJAPO - Na Fala.html" class="active">EN EL DISCURSO</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="../PT-BR/ONOJAPO - Na Fala.html">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Na Fala">EN</a> |
             <a href="../FR/FR-ONOJAPO - Na Fala.html">FR</a> |
             <a href="ES-ONOJAPO - Na Fala.html" class="active">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>EN EL DISCURSO</h2>
                 <p>Las palabras miméticas u onomatopeyas son una parte esencial de la comunicación cotidiana en Japón.
@@ -67,7 +67,7 @@
                 </p>
             </div>
 
-<section class="tabela-onoma-container">
+<section class="tabela-onoma-container" role="region" aria-label="Tabela de Onomatopeias">
     <div class="tabela-scroll">
         <table class="tabela-onoma">
         <thead>
@@ -496,5 +496,6 @@
     </main>
 </body>
 </html>
+
 
 
