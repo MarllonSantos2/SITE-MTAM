@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js"></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="FR-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="FR-ONOJAPO - Sobre.html">À PROPOS</a>
             <a href="FR-ONOJAPO - Onomatopeias.html">ONOMATOPEES</a>
             <a href="FR-ONOJAPO - Em Mangas.html">DANS LES MANGAS</a>
             <a href="FR-ONOJAPO - Na Fala.html" class="active">DANS LE DISCOURS</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Linguas">
             <a href="../PT-BR/ONOJAPO - Na Fala.html">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Na Fala.html">EN</a> |
             <a href="FR-ONOJAPO - Na Fala.html" class="active">FR</a> |
             <a href="../ES/ES-ONOJAPO - Na Fala.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="regeion" aria-label="conteudo">
             <div class="texto">
                 <h2>DANS LE DISCOURS</h2>
                 <p>Les mots mimétiques ou onomatopées sont une partie essentielle de la communication quotidienne au Japon.
@@ -67,7 +67,7 @@
                 </p>
             </div>
 
-<section class="tabela-onoma-container">
+<section class="tabela-onoma-container" role="region" aria-label="Tabela de Onomatopeias">
     <div class="tabela-scroll">
         <table class="tabela-onoma">
         <thead>
@@ -496,4 +496,5 @@
     </main>
 </body>
 </html>
+
 
