@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js" defer></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="ES-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="ES-ONOJAPO - Sobre.html">SOBRE</a>
             <a href="ES-ONOJAPO - Onomatopeias.html" class="active">ONOMATOPEYA</a>
             <a href="ES-ONOJAPO - Em Mangas.html">EN MANGAS</a>
             <a href="ES-ONOJAPO - Na Fala.html">EN EL DISCURSO</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="../PT-BR/ONOJAPO - Onomatopeias.html">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Onomatopeias.html">EN</a> |
             <a href="../FR/FR-ONOJAPO - Onomatopeias.html">FR</a> |
             <a href="ES-ONOJAPO - Onomatopeias.html" class="active">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>USO DE ONOMATOPEYAS</h2>
                 <p>Las onomatopeyas son palabras creadas para representar sonidos, movimientos o sensaciones de una manera directa e intuitiva. Pueden imitar ruidos reales, como tick-tock, bang o splash, o describir fenómenos más abstractos de manera expresiva.
@@ -44,7 +44,7 @@
                     En la lengua japonesa, estos dos grupos se combinan para formar un sistema extremadamente rico que ayuda a transmitir significados de manera visual, emocional e inmediata.
                 </p>
 
-            <div class="imagem">
+            <div class="imagem" role="img">
                     <img src="../assets/onomatopeia.webp" class="zoomable" alt="Imagen ilustrativa de onomatopeyas icónicas, estilizadas en colores verde, amarillo y rojo. Las onomatopeyas son: Pow!, Crash!, Boom!, Splash! y Argh!" class="miniatura">
             </div>
 
@@ -70,4 +70,5 @@
     </main>
 </body>
 </html>
+
 
