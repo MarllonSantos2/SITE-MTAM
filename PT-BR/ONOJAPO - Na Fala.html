@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js"></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="../index.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="../index.html">SOBRE</a>
             <a href="ONOJAPO - Onomatopeias.html">ONOMATOPEIAS</a>
             <a href="ONOJAPO - Em Mangás.html">EM MANGÁS</a>
             <a href="ONOJAPO - Na Fala.html" class="active">NA FALA</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="ONOJAPO - Na Fala.html" class="active">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Na Fala.html">EN</a> |
             <a href="../FR/FR-ONOJAPO - Na fala.html">FR</a> |
             <a href="../ES/ES-ONOJAPO - Na Fala.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>NA FALA</h2>
                 <p>As palavras miméticas ou inomatopeias são parte essencial da comunicação cotidiana no Japão.
@@ -66,7 +66,7 @@
                 <p>Segue uma tabela com diversas palavras miméticas de uso popular:</p>
             </div>
 
-<section class="tabela-onoma-container">
+<section class="tabela-onoma-container" role="region" aria-label="Tabela de Onomatopeias">
     <div class="tabela-scroll">
         <table class="tabela-onoma">
         <thead>
@@ -549,6 +549,7 @@
     </main>
 </body>
 </html>
+
 
 
 
