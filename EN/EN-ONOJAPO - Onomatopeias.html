@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js" defer></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="EN-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="EN-ONOJAPO - Sobre.html">ABOUT</a>
             <a href="EN-ONOJAPO - Onomatopeias.html" class="active">ONOMATOPOEIA</a>
             <a href="EN-ONOJAPO - Em Mangas.html">IN MANGA</a>
             <a href="EN-ONOJAPO - Na Fala.html">IN SPEECH</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="../PT-BR/ONOJAPO - Onomatopeias.html">PT-BR</a> |
             <a href="EN-ONOJAPO - Onomatopeias.html" class="active">EN</a> |
             <a href="../FR/FR-ONOJAPO - Onomatopeias.html">FR</a> |
             <a href="../ES/ES-ONOJAPO - Onomatopeias.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="buttton"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>USE OF ONOMATOPEIAS</h2>
                 <p>Onomatopoeia are words created to represent sounds, movements, or sensations in a direct and intuitive way. They can imitate real noises, such as tick-tock, bang, or splash, or describe more abstract phenomena in an expressive way.
@@ -44,7 +44,7 @@
                     In the Japanese language, these two groups blend together to form an extremely rich system that helps convey meanings in a visual, emotional, and immediate way.
                 </p>
 
-            <div class="imagem">
+            <div class="imagem" role="img">
                     <img src="../assets/onomatopeia.webp" class="zoomable" alt="Illustrative image of iconic onomatopoeias, stylized in green, yellow, and red colors. The onomatopoeias are: Pow!, Crash!, Boom!, Splash!, and Argh!" class="miniatura">
             </div>
 
@@ -70,5 +70,6 @@
     </main>
 </body>
 </html>
+
 
 
