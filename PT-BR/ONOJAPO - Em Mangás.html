@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../script/script.js" defer></script>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="../index.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -17,26 +17,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="../index.html">SOBRE</a>
             <a href="ONOJAPO - Onomatopeias.html">ONOMATOPEIAS</a>
             <a href="ONOJAPO - Em Mangás.html" class="active">EM MANGÁS</a>
             <a href="ONOJAPO - Na Fala.html">NA FALA</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="ONOJAPO - Em Mangás.html" class="active">PT-BR</a> |
             <a href="../EN/EN-ONOJAPO - Em Mangas.html">EN</a> |
             <a href="../FR/FR-ONOJAPO - Em Mangas.html">FR</a> |
             <a href="../ES/ES-ONOJAPO - Em Mangas.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>EM MANGÁS</h2>
                 <p>As onomatopeias são um dos elementos mais característicos dos mangás, desempenhando um papel que vai além da simples representação de sons. No contexto dos quadrinhos, elas funcionam como parte integrante da narrativa visual: descrevem movimentos, atmosferas, sensações e até estados emocionais de forma direta e gráfica. 
@@ -57,7 +57,7 @@
                     Comparações entre as versões japonesa e inglesa mostram como esses elementos podem ser reinterpretados de maneira criativa, mantendo a energia do original ao mesmo tempo em que tornam a leitura mais natural para falantes de outra língua.
                 </p>
 
-            <div class="img-dupla">
+            <div class="img-dupla" role="img">
                 <img src="../assets/csm12-jp.webp" class="zoomable" alt="Imagem ilustrativa">
                 <img src="../assets/csm12-eng.png" class="zoomable" alt="Imagem ilustrativa">
             </div>
@@ -84,5 +84,6 @@
     </main>
 </body>
 </html>
+
 
 
