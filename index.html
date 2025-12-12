@@ -10,7 +10,7 @@
 </head>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="index.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -18,26 +18,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="index.html" class="active">SOBRE</a>
             <a href="PT-BR/ONOJAPO - Onomatopeias.html">ONOMATOPEIAS</a>
             <a href="PT-BR/ONOJAPO - Em Mangás.html">EM MANGÁS</a>
             <a href="PT-BR/ONOJAPO - Na Fala.html">NA FALA</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="index.html" class="active">PT-BR</a> |
             <a href="EN/EN-ONOJAPO - Sobre.html">EN</a> |
             <a href="FR/FR-ONOJAPO - Sobre.html">FR</a> |
             <a href="ES/ES-ONOJAPO - Sobre.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>SOBRE</h2>
                 <p>O Onojapo é um site dedicado às onomatopeias e palavras miméticas da língua japonesa, reunindo explicações, exemplos e usos práticos tanto na fala quanto nos mangás. As onomatopeias japonesas vão muito além de simples sons: elas descrevem sensações, movimentos, emoções e estados de maneira visual e intuitiva. O objetivo do site é apresentar esse universo de forma acessível, mostrando como essas palavras funcionam e por que são tão importantes para entender o expressivo modo de comunicar dos japoneses.
@@ -51,4 +51,5 @@
     </main>
 </body>
 </html>
+
 
