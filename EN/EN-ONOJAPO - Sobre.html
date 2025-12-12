@@ -10,7 +10,7 @@
 </head>
 </head>
 <body>
-    <header class="topo">
+    <header class="topo" role="banner">
         <div class="logo-area">
             <a href="EN-ONOJAPO - Sobre.html" class="logo-link">
             <h1 class="logo">ONOJAPO</h1>
@@ -18,26 +18,26 @@
         </a>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Menu principal">
             <a href="EN-ONOJAPO - Sobre.html" class="active">ABOUT</a>
             <a href="EN-ONOJAPO - Onomatopeias.html">ONOMATOPOEIA</a>
             <a href="EN-ONOJAPO - Em Mangas.html">IN MANGA</a>
             <a href="EN-ONOJAPO - Na Fala.html">IN SPEECH</a>
         </nav>
 
-        <div class="idiomas">
+        <div class="idiomas" role="navigation" aria-label="Menu de Línguas">
             <a href="../index.html">PT-BR</a> |
             <a href="EN-ONOJAPO - Sobre.html" class="active">EN</a> |
             <a href="../FR/FR-ONOJAPO - Sobre.html">FR</a> |
             <a href="../ES/ES-ONOJAPO - Sobre.html">ES</a>
         </div>
 
-        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px"></button>
+        <button class="btn tamanhoItem" onclick="darkMode()"><img src="../assets/dark-mode.png" width="20px" role="button"></button>
 
     </header>
 
-    <main class="conteudo">
-        <section class="caixa">
+    <main class="conteudo" role="main">
+        <section class="caixa" role="region">
             <div class="texto">
                 <h2>ABOUT</h2>
                 <p>Onojapo is a website dedicated to onomatopoeia and mimetic words in the Japanese language, bringing together explanations, examples, and practical uses in both speech and manga. Japanese onomatopoeia goes far beyond simple sounds: it describes sensations, movements, emotions, and states in a visual and intuitive way. The goal of the website is to present this universe in an accessible way, showing how these words work and why they are so important for understanding the expressive way of communicating of the Japanese.
@@ -51,4 +51,5 @@
     </main>
 </body>
 </html>
+
 
